@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eceff1, #ffffff);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #160202;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #f5f5f5;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Navigation Menu */
+  nav {
+    background: #2a2f46;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #a0d8b3;
+  }
+  
+  /* Main Section Styles */
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  main section {
+    margin-bottom: 20px;
+  }
+  
+  main section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  main section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2a4d69;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    main section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav a {
+      font-size: 0.9rem;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
